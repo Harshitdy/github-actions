@@ -3,7 +3,7 @@ name: Flask App Tests
 
 on:
     pull_request:
-        branches: 
+        branches:
             - main
 
 jobs:
@@ -23,7 +23,7 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
-            - name: Set up Python 
+            - name: Set up Python
               uses: actions/setup-python@v4
               with:
                 python-version: ${{ matrix.python-version }}
